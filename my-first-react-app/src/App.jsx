@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from "react";
-import CardList from "./components/CardList";
+import CardList from "./Cardlist";
 import "./App.css";
 
 const App = () => {
