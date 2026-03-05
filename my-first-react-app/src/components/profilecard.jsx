@@ -2,23 +2,19 @@ import React from "react";
 
 const ProfileCard = ({ image, name, role }) => {
   return (
-    <div className="bg-white shadow-lg rounded-xl p-6 w-80 text-center">
-      
+    <div className="card">
+
       <img
         src={image}
-        alt={name}
-        className="w-32 h-32 rounded-full mx-auto object-cover"
+        alt="profile"
+        className="profile-image"
       />
 
-      <h2 className="text-2xl font-bold mt-4">
-        {name}
-      </h2>
+      <h2 className="name">{name}</h2>
 
-      <p className="text-gray-600">
-        {role}
-      </p>
+      <p className="role">{role}</p>
 
-      <button className="mt-4 w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">
+      <button className="profile-btn">
         View Profile
       </button>
 
