@@ -1,17 +1,42 @@
-// src/App.jsx
 import React from "react";
-import CardList from "./Cardlist";
-import "./App.css";
+import "./app.css";
+import image from "./assets/smile.png";
+import ProfileCard from "./components/profileCard";
 
-const App = () => {
+function App() {
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
-      <h1 className="text-3xl font-bold text-center mb-8">
-        ID Card Generator
+    <div className="App">
+      <h1 className="text-4xl font-bold text-center mt-8">
+        Team Profiles
       </h1>
-      <CardList />
+
+     
+      <div className="flex justify-center gap-6 mt-10">
+
+        
+        <ProfileCard
+          image={image}
+          name="Leoncie Umutoni"
+          role="Software Developer"
+        />
+
+        
+        <ProfileCard
+          image={image}
+          name="Leoncie Umutoni"
+          role="Software Developer"
+        />
+
+        
+        <ProfileCard
+          image={image}
+          name="Leoncie Umutoni"
+          role="Software Developer"
+        />
+
+      </div>
     </div>
   );
-};
+}
 
 export default App;
